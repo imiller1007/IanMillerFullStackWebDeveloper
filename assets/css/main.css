@@ -1,0 +1,47 @@
+body {
+    background-image: url("../images/los-angeles-1790986.jpg");
+    /* Background image is centered vertically and horizontally at all times */
+    background-position: center center;
+    
+    /* Background image doesn't tile */
+    background-repeat: no-repeat;
+    
+    /* Background image is fixed in the viewport so that it doesn't move when 
+        the content's height is greater than the image's height */
+    background-attachment: fixed;
+    
+    /* This is what makes the background image rescale based
+        on the container's size */
+    background-size: cover;
+    
+    /* Set a background color that will be displayed
+        while the background image is loading */
+    background-color: #464646;
+}
+
+.nav-links ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.nav-links li {
+    display: inline-block;
+}
+
+.nav-links a {
+    font-family: 'Montserrat', sans-serif;
+    color: orange;
+    text-decoration: none;
+    font-size: 24px;
+    padding: 15px;
+    transition: color 0.5s, text-shadow 0.5s;
+}
+
+.nav-links a:hover{
+    text-shadow: 2px 2px 5px white;
+    color: white;
+    border-bottom: 3px, solid, white;
+}
+
+
