@@ -6,6 +6,7 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <link rel="stylesheet" href="./assets/css/main.css">
     <link href="https://fonts.googleapis.com/css?family=Montserrat|Roboto&display=swap" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
     <title>Ian Miller | Full Stack Web Developer</title>
 </head>
 <body>
@@ -17,24 +18,73 @@
             </div>
             <div class="row pb-5">
                 <div class="text-center mx-auto">
-                    <img src="./assets/images/LogoOutline.svg" alt="">
+                    <img src="./assets/images/LogoOutline.svg" alt="IMLogo" id="logo">
                 </div>
             </div>
             <div class="row">
-                <div class="col-md-8 offset-md-2 col-sm-4 offset-sm-4 text-center">
+                <div class="col-md-8 offset-md-2 col-sm-8 offset-sm-2 col-xs-12 text-center">
                     <nav class="nav-links">
                         <ul>
-                            <li><a class="animated-link" href="#">ABOUT</a></li>
-                            <li><a class="animated-link" href="#">WORK</a></li>
-                            <li><a class="animated-link" href="#">CONTACT</a></li>
+                            <li><a class="animated-link" href="#" id="about">ABOUT</a></li>
+                            <li><a class="animated-link" href="#" id="work">WORK</a></li>
+                            <li><a class="animated-link" href="#" id="contact">CONTACT</a></li>
                         </ul>
                     </nav>
                 </div>
             </div>
         </section>
+
         
     </div>
 </body>
+
+<script>
+
+
+function IntroAnimation(){
+    setTimeout(function(){$("#about").fadeTo(3000, 1)}, 1000);
+    setTimeout(function(){$("#work").fadeTo(3000, 1)}, 1300);
+    setTimeout(function(){$("#contact").fadeTo(3000, 1)}, 1600);
+    $("#logo").fadeTo(200, 0.5);
+    $("#logo").fadeTo(2, 0.8);
+    $("#logo").fadeTo(200, 1);
+    $("#logo").fadeTo(50, 0.8);
+    $("#logo").fadeTo(100, 0.7);
+    $("#logo").fadeTo(7, 0.6);
+    $("#logo").fadeTo(1, 1);
+    $("#logo").fadeTo(90, 0.7);
+    $("#logo").fadeTo(50, 0.3);
+    $("#logo").fadeTo(57, 1);
+    $("#logo").fadeTo(50, 0.4);
+    $("#logo").fadeTo(100, 0.3);
+    $("#logo").fadeTo(7, 0.6);
+    $("#logo").fadeTo(1, 1);
+    $("#logo").fadeTo(90, 0.7);
+    $("#logo").fadeTo(50, 0.3);
+    $("#logo").fadeTo(57, 1);
+    $("#logo").fadeTo(50, 0.4);
+    $("#logo").fadeTo(100, 0.3);
+    $("#logo").fadeTo(7, 0.6);
+    $("#logo").fadeTo(96, 0.8);
+    $("#logo").fadeTo(96, 0.6);
+    $("#logo").fadeTo(96, 1);
+    $("#logo").fadeTo(100, 0.3);
+    $("#logo").fadeTo(7, 0.6);
+    $("#logo").fadeTo(96, 0.8);
+    $("#logo").fadeTo(96, 0.6);
+    $("#logo").fadeTo(7, 0.6);
+    $("#logo").fadeTo(96, 0.8);
+    $("#logo").fadeTo(96, 0.6);
+    $("#logo").fadeTo(100, 0.3);
+    $("#logo").fadeTo(7, 0.6);
+    $("#logo").fadeTo(96, 0.8);
+    $("#logo").fadeTo(96, 0.6);
+    $("#logo").fadeTo(96, 1);
+}
+
+IntroAnimation();
+
+</script>
 </html>
 
 
