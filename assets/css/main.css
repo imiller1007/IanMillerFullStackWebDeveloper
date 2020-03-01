@@ -1,4 +1,6 @@
 body {
+    height: auto;
+
     background-image: url("../images/los-angeles-1790986.jpg");
     /* Background image is centered vertically and horizontally at all times */
     background-position: center center;
@@ -49,4 +51,20 @@ body {
     border-bottom: 3px, solid, white;
 }
 
+.hero-section {
+    height: 100vh;
+    overflow: hidden;
+}
+
+.about-section {
+    color: orange;
+}
+
+.about-background-wrapper {
+    background-color: #464646;
+}
+
+.about-section h2 {
+    font-family: 'Montserrat', sans-serif;
+}
 
