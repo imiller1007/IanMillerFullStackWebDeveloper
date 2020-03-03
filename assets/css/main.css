@@ -21,6 +21,10 @@ body {
     background-color: #464646;
 }
 
+.header {
+    font-family: 'Montserrat', sans-serif;
+}
+
 #logo {
     opacity: 0;
 }
@@ -60,11 +64,19 @@ body {
     color: orange;
 }
 
-.about-background-wrapper {
+.gray-background-wrapper {
     background-color: #464646;
 }
 
-.about-section h2 {
-    font-family: 'Montserrat', sans-serif;
+.work-section {
+    color: #464646;
+}
+
+.orange-background-wrapper {
+    background-color: orange;
+}
+
+.contact-section {
+    color: orange;
 }
 
