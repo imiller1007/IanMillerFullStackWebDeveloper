@@ -81,7 +81,7 @@ body {
 .card-container {
     position: relative;
     max-width: 22rem;
-    perspective: 200rem;
+    perspective: 1000px;
     height: 500px;
     margin: 0 auto;
     float: none;
@@ -146,4 +146,31 @@ body {
   
   .card-back::-webkit-scrollbar-thumb:hover {
     background: orange; 
+  }
+
+  .project-link {
+    color: orange;
+    text-decoration: underline;
+    transition: color 0.5s, text-shadow 0.5s;
+  }
+
+  .project-link:hover {
+    text-shadow: 2px 2px 5px white;
+    color: white;
+    border-bottom: 3px, solid, white;
+  }
+
+  .email-link {
+    font-family: 'Montserrat', sans-serif;  
+    color: orange;
+    background-color: #464646;
+    border: 0px solid transparent;
+    text-decoration: underline;
+    transition: color 0.5s, text-shadow 0.5s;
+  }
+
+  .email-link:hover {
+    text-shadow: 2px 2px 5px white;
+    color: white;
+    border-bottom: 3px, solid, white;
   }
