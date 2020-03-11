@@ -349,14 +349,6 @@
                 </div>
                 <div class="row">
                     <div class="col-md-6 offset-md-3 col-sm-12 col-xs-12 text-center">
-                        <!-- <h4 class="header pt-2 pb-2"><a class="project-link" href="https://roastr-app.herokuapp.com/" target="_blank">contact.ianmiller@gmail.com</a></h4> -->
-                        <h4><button class="header email-link pt-2 pb-2" data-clipboard-text="contact.ianmiller@gmail.com">
-                            contact.ianmiller@gmail.com
-                        </button></h4>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-md-6 offset-md-3 col-sm-12 col-xs-12 text-center">
                         <h4 class="header pt-2 pb-2"><a class="project-link"
                                 href="https://www.linkedin.com/in/ian-miller-webdeveloper/" target="_blank">LinkedIn</a>
                         </h4>
@@ -364,8 +356,16 @@
                 </div>
                 <div class="row">
                     <div class="col-md-6 offset-md-3 col-sm-12 col-xs-12 text-center">
-                        <h4 class="header pt-2 pb-5"><a class="project-link" href="https://github.com/imiller1007"
+                        <h4 class="header pt-2 pb-2"><a class="project-link" href="https://github.com/imiller1007"
                                 target="_blank">GitHub</a></h4>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-6 offset-md-3 col-sm-12 col-xs-12 text-center">
+                        <!-- <h4 class="header pt-2 pb-2"><a class="project-link" href="https://roastr-app.herokuapp.com/" target="_blank">contact.ianmiller@gmail.com</a></h4> -->
+                        <h4><button class="header btn pt-2 pb-2" data-clipboard-text="contact.ianmiller@gmail.com">
+                            contact.ianmiller@gmail.com
+                        </button></h4>
                     </div>
                 </div>
                 <div class="row pt-5">
@@ -443,13 +443,13 @@
             }
         });
 
-        var clipboard = new ClipboardJS('.email-link');
+        var clipboard = new ClipboardJS('.btn');
         clipboard.on('success', function(e) {
             console.log(e);
-            $(".email-link").text("Copied to clipboard");
-            $(".email-link").css( "text-decoration", "none");
-            setTimeout(function(){ $(".email-link").text("contact.ianmiller@gmail.com") }, 2000);
-            setTimeout(function(){ $(".email-link").css( "text-decoration", "underline") }, 2000);
+            $(".btn").text("Copied to clipboard");
+            $(".btn").css( "text-decoration", "none");
+            setTimeout(function(){ $(".btn").text("contact.ianmiller@gmail.com") }, 2000);
+            setTimeout(function(){ $(".btn").css( "text-decoration", "underline") }, 2000);
         });
         clipboard.on('error', function(e) {
             console.log(e);
